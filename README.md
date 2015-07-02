@@ -26,6 +26,15 @@ get '/' do
 end
 ```
 
+## 実行方法
+
+```
+bundle install
+bundle ex unicorn -c ./config/unicorn.rb
+bundle ex puma -C ./config/puma.rb
+ruby client.rb
+```
+
 ## 調査結果
 
 ![](image.png)
